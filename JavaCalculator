@@ -1,0 +1,52 @@
+//Importing Section
+import java.util.Scanner;
+
+public class main {
+	public static void main(String [] args){
+		Scanner input = new Scanner (System.in);
+		System.out.println("[][][][][][][][][][][][][][][][][][]");
+		System.out.println("[] WELCOME TO ADVENCED CALCULATOR []");
+		System.out.println("[][][][][][][][][][][][][][][][][][]");
+		System.out.println();
+		while (true){
+			System.out.println("Enter First Number: ");
+			int x = input.nextInt();
+			System.out.println("Enter Second Number");
+			int y = input.nextInt();
+			System.out.println("Which Task do you want to perform?");
+			System.out.println("[1] [2] [3] [4]");
+			System.out.println("[+] [-] [x] [/]");
+			int f = input.nextInt();
+			int a, s, m, d;
+			a = x + y;
+			s = x - y;
+			m = x * y;
+			d = x / y;
+			
+			switch(f){
+			case 1: 
+				System.out.print("The answer is: ");
+				System.out.println(a);
+				break;
+			case 2: 
+				System.out.print("The answer is: ");
+				System.out.println(s);
+				break;
+			case 3: 
+				System.out.print("The answer is: ");
+				System.out.println(m);
+				break;
+			case 4: 
+				System.out.print("The answer is: ");
+				System.out.println(d);
+				break;
+			default: 
+				System.out.println("Input not recognized");
+			}
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+		}
+	}
+}
